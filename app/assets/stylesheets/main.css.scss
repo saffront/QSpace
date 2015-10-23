@@ -1,0 +1,161 @@
+//home
+
+.page-wrap {
+	padding-left:40px;
+}
+
+.location {
+	margin: 40px 0px 40px 0;
+	width: 60%;
+	position:relative;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 1px solid #000000;
+	padding: 20px;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+.jumbotron h1,p {
+  padding-left: 30px;
+}
+
+.jumbotron btn {
+  padding-right: 1000px;
+}
+
+
+//map
+
+html, body {
+height: 100%;
+}
+
+body.map-wrap {
+background-image: image-url('ucl.jpg');
+background-size: auto 100%;
+        background-repeat: no-repeat;
+position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  z-index: -1;
+  background-size: contain;
+
+}
+
+
+//contact page rubbish
+@font-face {
+  font-family: 'Nevis-Bold';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/Nevis-Bold.ttf.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/Nevis-Bold.ttf.svg#Nevis-Bold') format('svg'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/Nevis-Bold.ttf.eot'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/Nevis-Bold.ttf.eot?#iefix') format('embedded-opentype');
+}
+
+html,
+body {
+  min-height:100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.theTron {
+  display: table;
+  z-index: 1;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 0px;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: #000 !important;
+  -webkit-transition: all 1000ms linear;
+  -moz-transition: all 1000ms linear;
+  -ms-transition: all 1000ms linear;
+  -o-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+  overflow: hidden;
+}
+
+
+
+#kb-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  z-index: -1;
+  background: #000;
+  background-size: cover;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/143797/beach.jpg');
+  background-position: bottom left;
+  opacity:0;
+}
+/* Loaded image container */
+
+h1 {
+  font-family: "Nevis-Bold";
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 10s;
+  -webkit-transition: all 10s;
+  opacity: 0;
+  transform: scale(.5);
+  -webkit-transform: scale(.5)
+}
+h1 span {color:red}
+
+.letter-spacing {
+  letter-spacing: 10px;
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+/* THE ANIMATION */
+
+.loaded .activated-KB {
+  opacity:.8 !important;
+  -webkit-animation: ken-burns;
+  -webkit-animation-duration: 10s;
+  animation: ken-burns;
+  animation-duration: 10s;
+  -webkit-transform: scale(1.15) translate3d(75px, -25px, 0);
+  transform: scale(1.15) translate3d(75px, -25px, 0);
+}
+
+@-webkit-keyframes ken-burns {
+  from {
+    -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: scale(1.15) translate3d(75px, -25px, 0);
+  }
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1.1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.15) translate3d(75px, -25px, 0);
+  }
+}
