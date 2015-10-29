@@ -98,8 +98,7 @@ height: 100%;
 
 body.map-wrap {
 background-image: image-url('ucl.jpg');
-background-size: auto 100%;
-        background-repeat: no-repeat;
+background-size: cover;
 position: fixed;
   right: 0;
   bottom: 0;
