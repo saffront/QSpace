@@ -18,11 +18,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'therubyracer'
-gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'byebug'

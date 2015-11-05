@@ -1,10 +1,22 @@
 Rails.application.routes.draw do
-  devise_for :users
+  get 'welcome/sign_in'
+
+  get 'comments/new'
+
   get '/', to: 'welcome#home'
 
   get '/map', to: 'welcome#map'
 
   get '/contact', to: 'welcome#contact'
+  
+
+  resources :comments, only: [:new, :create]
+
+  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/auth/failure', to: 'sessions#auth_fail'
+  get '/sign_out', to: 'sessions#destroy', as: :sign_out
+
+  get '/comments/new', to: 'comments#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
