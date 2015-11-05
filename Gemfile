@@ -5,7 +5,7 @@ gem 'rails', '4.2.4'
 
 gem 'sqlite3', group: :development # Added development group.
 
-group: :production do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
