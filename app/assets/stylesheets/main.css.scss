@@ -23,7 +23,8 @@
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 1px solid #000000;
-  padding: 20px;
+  padding: 5px;
+  padding-left: 25px;
   }
 
 
@@ -39,8 +40,12 @@
   padding-right: 1000px;
 }
 
+h2 {
+  text-align: left;
+}
+
 .btn1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'open sans', sans-serif;
   display: block;
   height: 40px;
   padding: 5px 0px;
