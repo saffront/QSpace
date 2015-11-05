@@ -4,8 +4,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 
 gem 'sqlite3', group: :development # Added development group.
-  gem 'pg', group: :production # Added postgres and made it production only.
+
+group: :production do
+  gem 'pg'
   gem 'rails_12factor'
+end
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
