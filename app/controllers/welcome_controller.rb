@@ -10,4 +10,8 @@ class WelcomeController < ApplicationController
 
   def sign_in
   end
+
+  def about_us
+  end
 end
+
