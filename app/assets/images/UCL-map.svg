@@ -11,10 +11,18 @@
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
 
-<div class="map-wrap">
 <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="688.32px" height="510px"
 	 viewBox="0 0 688.32 510" style="enable-background:new 0 0 688.32 510;" xml:space="preserve">
+
+<style>
+
+#cruciform, #archaeology, #wilkins, #science-library, #chadwick, #_x32_6-bedford-way, #pearson, #anatomy, #christopher-ingold-cluster, #foster-court, #gordon-house, #_x31_-19-torrington-place {
+	fill: #4183D7;
+} 
+
+</style>
+
 <style type="text/css">
 <![CDATA[
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D4D3D3;}
@@ -18297,6 +18305,7 @@
 </g>
 <polygon id="cruciform" class="st270" points="160.5,136 243.78,138.41 243.78,226.88 162.33,221.34 "/>
 
+
 <polygon id="rayne-1" class="st270" points="60,233.5 57.5,252 124,252 124,233.5 "/>
 <polygon id="capper-st" class="st270" points="85.5,272 83,309.5 103,309.5 103,296 95.5,296 95.5,272 "/>
 <rect id="rayne-2" x="116.5" y="252" class="st270" width="7.5" height="13.5"/>
@@ -18428,7 +18437,6 @@
 <rect id="anatomy" x="256" y="258.75" class="st270" width="22" height="71.75"/>
 <polygon id="gordon-house" class="st270" points="447.42,218 463.17,218 463.17,242.75 446,242.75 "/>
 
-<style>polygon:hover #cruciform { fill: darkblue; }
-  }</style>
+
+
 </svg>
-</div>

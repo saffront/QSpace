@@ -1,10 +1,58 @@
 <html>
 <head>
 
+
+<script> 
+
+// 	//number of pixels offset to separate popup from mouse
+//       var mouseOffset = 4;
+//       var numFloorsInBuilding = Object.keys(list).length;
+
+//       var percent = (totalFullness / numFloorsInBuilding); //Should be from [0, 100]
+//       var buildingElement = innerSvg.getElementById('parent_' + building); //e.g. parent_43
+
+//       if(buildingElement != null) {
+//         buildingElement.style.opacity = percent / 100;
+//       }
+
+// 	//displays popup at location of mouse
+//       buildingElement.onmouseenter = function(event) {
+//         popup.style.visibility = 'visible';
+//         var leftPosition = (initialOffsetLeft + event.clientX - 
+//           (popup.offsetWidth / 2)).toString() + 'px'; // divide by 2 centers it (half of width)
+//         var topPosition = (initialOffsetTop - mouseOffset + event.clientY -
+//           (popup.offsetHeight)).toString() + 'px';
+//         popup.style.top = topPosition;
+//         popup.style.left = leftPosition;
+//         var location = this.id.replace('parent_', '');
+//         popup.innerHTML = buildingStrings[location];
+//       }
+
+//       buildingElement.onmouseout = function() {
+//         popup.style.visibility = 'hidden';
+//       }
+
+//       //moves popup with mouse
+//       buildingElement.onmousemove = function(event) {
+//         var leftPosition = (initialOffsetLeft + event.clientX - 
+//           (popup.offsetWidth / 2)).toString() + 'px'; // divide by 2 centers it (half of width)
+//         var topPosition = (initialOffsetTop - mouseOffset + event.clientY -
+//           (popup.offsetHeight)).toString() + 'px';
+//         popup.style.top = topPosition;
+//         popup.style.left = leftPosition;
+//       }
+//       </script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="main.js"></script>
 </head>
 <body>
 
-<object type="image/svg+xml" data="<%= asset_path 'UCL-map.svg' %>"></object>
+<div class="map-container">
+
+	<object type="image/svg+xml" data="<%= asset_path 'UCL-map.svg' %>"></object>
+
+</div>
 
 </body>
 </html>
