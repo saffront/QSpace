@@ -7,8 +7,7 @@ Rails.application.configure do
   Add the fonts path
 config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
-Precompile additional assets
-config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.eot *.woff *.ttf)
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
