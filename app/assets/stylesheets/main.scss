@@ -103,10 +103,10 @@ height: 100%;
 
 .map-wrap {
 background-image: image-url('UCL-map.svg');
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
         margin-bottom: 337px;
 }
 
