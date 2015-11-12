@@ -119,8 +119,141 @@ margin-bottom: 37px;
 
 
 
+//about us
+
+.cloud{
+  background-color: #87CEFA;
+  height:250px;
+}
+/* clouds */
+.container-cloud{
+  height:0;
+  position: relative;
+  width:100%;
+  padding-top: 10%;
+}
+.svg-cloud01 {
+  width:100%;
+  height: 150%;
+  fill: #ecf0f1;
+  position: absolute;
+  top:0;
+  left:-100px;
+  z-index:100;
+  overflow-x:hidden;
+-webkit-animation:drift 25s linear infinite;
+-moz-animation: drift 25s linear infinite;
+-o-animation: drift 25s linear infinite;
+-ms-animation: drift 25s linear infinite;
+animation:drift 25s linear infinite;
+}
+.svg-cloud02 {
+  width:100%;
+  height:100%;
+  fill:#ecf0f1;
+  position:absolute;
+  top:100px;
+  left:-50px;
+  z-index: 200;
+  overflow-x: hidden;
+-webkit-animation:drift 10s linear infinite backwards;
+-moz-animation: drift 10s linear infinite backwards;
+-o-animation: drift 10s linear infinite backwards;
+-ms-animation: drift 10s linear infinite backwards;
+animation:drift 10s linear infinite backwards;
+}
+/* Animation for the drifting clouds */
+@-webkit-keyframes drift {
+0% {opacity: 1;-webkit-transform: translateX(-10px);}
+100% {opacity: 1;-webkit-transform: translateX(100%);}
+}
+@-moz-keyframes drift {
+0% {opacity: 1;-moz-transform: translateX(-10px);}
+100% {opacity: 1;-moz-transform: translateX(100%);}
+}
+@-o-keyframes drift {
+0% {opacity: 1;-o-transform: translateX(-10px);}
+100% {opacity: 1;-o-transform: translateX(100%);}
+}
+@-ms-keyframes drift {
+0% {opacity: 1;-ms-transform: translateX(-10px);}
+100% {opacity: 1;-ms-transform: translateX(100%);}
+}
+@keyframes drift {
+  0% {opacity: 1;transform: translateX(-10px);}
+  100% {opacity: 1;transform: translateX(100%);}
+}
 
 
-//contact page 
+//surprise
 
+body {
+  background-color: #ddd;
+  overflow: hidden;
+  margin: 0;
+}
 
+.bg {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background-image: url(http://pngimg.com/upload/heart_PNG701.png);
+  filter: grayscale(1) url('#wobble');
+  -webkit-filter: grayscale(.1) url('#wobble');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: color-dodge;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width: 50%;
+  height: 50%;
+  background-image: url(http://pngimg.com/upload/heart_PNG701.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode:luminosity;
+}
+
+.frame {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width: 40%;
+  height: 40%;
+}
+canvas {
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#paper {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#poper {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

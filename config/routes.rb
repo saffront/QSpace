@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/about_us'
-
-  get 'welcome/sign_in'
-
-  get 'comments/new'
+  get '/surprise', to: 'welcome#surprise'
 
   get '/about_us', to: 'welcome#about_us'
 
