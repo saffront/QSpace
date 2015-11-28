@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <h3 class="text-primary text-center">
+    Main Library Analysis
+  </h3>
+  <div class"row">
+      <label class="label label-success">Number of People against Time</label>
+      <div id="area-chart" ></div> 
+  </div>
+
+  <div class="well">
+  <h2 class="red-text">Yesterday</h2>
+  <h2 class="green-text">Today</h2>
+  </div>
+</div>
+
+<script>
+var data = [
+      { y: '1000', a: 30, b: 90},
+      { y: '1100', a: 65,  b: 75},
+      { y: '1200', a: 100,  b: 50},
+      { y: '1300', a: 125,  b: 60},
+      { y: '1400', a: 200,  b: 65},
+      { y: '1500', a: 260,  b: 70},
+      { y: '1600', a: 240, b: 75},
+      { y: '1700', a: 215, b: 75},
+      { y: '1800', a: 120, b: 85},
+      { y: '1900', a: 135, b: 85},
+      { y: '2000', a: 180, b: 95}
+    ],
+    config = {
+      data: data,
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['Total Income', 'Total Outcome'],
+      fillOpacity: 0.6,
+      hideHover: 'auto',
+      behaveLikeLine: true,
+      resize: true,
+      pointFillColors:['#ffffff'],
+      pointStrokeColors: ['black'],
+      lineColors:['#5CB85C','#D9534F']
+  };
+config.element = 'area-chart';
+Morris.Area(config);
+config.element = 'line-chart';
+Morris.Line(config);
+config.element = 'bar-chart';
+Morris.Bar(config);
+config.element = 'stacked';
+config.stacked = true;
+Morris.Bar(config);
+Morris.Donut({
+  element: 'pie-chart',
+  data: [
+    {label: "Friends", value: 30},
+    {label: "Allies", value: 15},
+    {label: "Enemies", value: 45},
+    {label: "Neutral", value: 10}
+  ]
+});
+</script>
