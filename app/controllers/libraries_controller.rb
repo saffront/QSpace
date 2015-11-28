@@ -1,2 +1,4 @@
-  def main_library
-  end
+class LibrariesController < ApplicationController
+	def main_library
+  	end
+end
