@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get '/surprise', to: 'welcome#surprise'
-
   get '/about_us', to: 'welcome#about_us'
 
   get '/', to: 'welcome#home'
@@ -8,6 +6,8 @@ Rails.application.routes.draw do
   get '/map', to: 'welcome#map'
 
   get '/contact', to: 'welcome#contact'
+
+  get '/
   
 
   resources :comments, only: [:new, :create]
