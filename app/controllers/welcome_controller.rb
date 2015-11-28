@@ -13,8 +13,5 @@ class WelcomeController < ApplicationController
 
   def about_us
   end
-
-  def main_library
-  end
 end
 
