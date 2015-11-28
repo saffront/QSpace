@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h3 class="text-primary text-center">
+  <h3 class="text-center">
     Main Library Analysis
   </h3>
   <div class"row">
@@ -8,9 +8,26 @@
   </div>
 
   <div class="well">
-  <h2 class="red-text">Yesterday</h2>
-  <h2 class="green-text">Today</h2>
+    <h2 class="red-text">Today</h2>
+    <h2 class="grey-text">Typical <span class="green-text">Thursday</span></h2>
   </div>
+
+  <p>Reading Rooms<br>
+Monday: Open from 08:45<br>
+Tuesday - Friday: 24 hour opening<br>
+Saturday: 24 hour opening until 21:00<br>
+Sunday: 11:00 - 21:00 (holders of UCL Library cards only)<br>
+Self-service<br>
+Monday: Open from 08:45<br>
+Tuesday - Friday: 24 hour opening<br>
+Saturday: 24 hour opening until 20:45<br>
+Sunday: 11:00 - 20:45<br>
+Help Point<br>
+Monday - Thursday: 09:30 - 21:00<br>
+Friday: 10:00 - 21:00<br>
+Saturday: 11:00 - 18:00<br>
+Sunday: Closed</p>
+
 </div>
 
 <script>
@@ -31,14 +48,14 @@ var data = [
       data: data,
       xkey: 'y',
       ykeys: ['a', 'b'],
-      labels: ['Total Income', 'Total Outcome'],
+      labels: ['Humans', 'Humans'],
       fillOpacity: 0.6,
       hideHover: 'auto',
       behaveLikeLine: true,
       resize: true,
       pointFillColors:['#ffffff'],
       pointStrokeColors: ['black'],
-      lineColors:['#5CB85C','#D9534F']
+      lineColors:['gray','#D9534F']
   };
 config.element = 'area-chart';
 Morris.Area(config);
