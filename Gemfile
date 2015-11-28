@@ -16,6 +16,9 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'devise'
 
+gem 'less-rails', '~> 2.7.0'
+gem 'therubyracer' # Ruby
+
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
