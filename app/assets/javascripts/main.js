@@ -4,9 +4,13 @@ $(window).load(function(){
 })
 
 jQuery(function(){
-        jQuery('.showSingle').click(function(){
+        jQuery('.showSingle').mouseenter(function(){
               jQuery('.targetDiv').hide();
               jQuery('#div'+$(this).attr('target')).show();
+        });
+        jQuery('.showSingle').mouseleave(function(){
+        	jQuery('.targetDiv').hide();
+              jQuery('#div'+$(this).attr('target')).hide();
         });
 });
 
