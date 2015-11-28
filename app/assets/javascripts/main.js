@@ -13,4 +13,3 @@ jQuery(function(){
               jQuery('#div'+$(this).attr('target')).hide();
         });
 });
-
