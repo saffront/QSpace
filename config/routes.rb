@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'welcome#contact'
 
+  get '/live_feed', to: 'welcome#live_feed'
+
 
   get '/main_library', to: 'libraries#main_library'
 

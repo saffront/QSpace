@@ -13,5 +13,8 @@ class WelcomeController < ApplicationController
 
   def about_us
   end
+
+  def live_feed
+  end
 end
 
