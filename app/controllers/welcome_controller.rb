@@ -14,7 +14,7 @@ class WelcomeController < ApplicationController
   def about_us
   end
 
-  def surprise
+  def main_library
   end
 end
 
