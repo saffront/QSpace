@@ -7,8 +7,8 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'welcome#contact'
 
-  get '/
-  
+
+  get '/main_library', to: 'libraries#main_library'
 
   resources :comments, only: [:new, :create]
 
