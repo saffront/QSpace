@@ -22,7 +22,7 @@
 
 <style>
 
-.cruciform, #archaeology, #wilkins {
+.cruciform, #archaeology {
 	fill: #D9534F
 }
 
@@ -30,7 +30,7 @@
 	fill: #F0AD4E;
 }
 
-#pearson, #anatomy, #christopher-ingold-cluster, .foster-court, #gordon-house, #_x31_-19-torrington-place {
+#wilkins, #pearson, #anatomy, #christopher-ingold-cluster, .foster-court, #gordon-house, #_x31_-19-torrington-place {
 	fill: #5CB85C;
 } 
 
